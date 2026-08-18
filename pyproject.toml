@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==72.1.0", "wheel==0.43.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lumitwin-wearable"
+version = "0.1.0"
+description = "Multimodal ambient-light phenotyping for circadian state and photic exposure"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+  "torch==2.3.1",
+  "pandas==2.2.2",
+  "pyyaml==6.0.2",
+]
+
+[project.scripts]
+lumitwin-train = "lumitwin.train:main"
+lumitwin-prepare = "data_tools.prepare:main"
+
+[tool.setuptools]
+packages = ["lumitwin", "data_tools"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100
+

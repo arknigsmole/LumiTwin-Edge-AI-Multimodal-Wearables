@@ -1,0 +1,12 @@
+name: lumitwin
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11.9
+  - pytorch=2.3.1
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - pandas=2.2.2
+  - pyyaml=6.0.2
+

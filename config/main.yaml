@@ -1,0 +1,24 @@
+seed: 17
+epochs: 200
+batch_size: 64
+learning_rate: 0.0003
+optimizer: adamw
+early_stopping_patience: 20
+epoch_seconds: 30
+timeline_bins: 1008
+timeline_channels: 5
+trunk_width: 48
+trunk_layers: 10
+dilations: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+adapter_rank: 8
+particles: 256
+particle_weight_floor: 0.001
+dictionary_atoms: 16
+chromaticity_bins: 64
+aqdc_bits: [4, 8]
+aqdc_duties: [1.0, 0.5, 0.25]
+aqdc_v: 2.0
+energy_budget_j_day: 144.0
+thresholds_lux: [1000.0, 2000.0, 3000.0]
+bout_minutes: 15
+
